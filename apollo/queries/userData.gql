@@ -1,0 +1,23 @@
+query Boolean(
+    $username: String!,
+    $name: String,
+    $affiliationName: String,
+    $affiliationUrl: String
+    $description: String,
+    $field1: String,
+    $field2: String,
+    $field3: String,
+    $regionId: ID
+    ) {
+  setUserData(
+    username: $username,
+    name: $name,
+    affiliationName: $affiliationName,
+    affiliationUrl: $affiliationUrl,
+    description: $description,
+    field1: $field1,
+    field2: $field2,
+    field3: $field3,
+    regionId: $regionId
+    )
+}

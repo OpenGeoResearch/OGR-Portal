@@ -1,0 +1,69 @@
+query Report {
+  reports {
+        id,
+        text,
+        reason {
+            name
+        },
+        created,
+        user {
+            id,
+            username
+        }
+        question {
+            id,
+            user {
+                id,
+                username
+            }
+        },
+        answer {
+            id,
+            content,
+            user {
+                id,
+                username
+                }
+            question {
+                id,
+                user {
+                    id,
+                    username
+                }
+            }
+        },
+        questionComment {
+            id,
+            user {
+                id,
+                username
+                }
+            content,
+            question {
+                id,
+                user {
+                    id,
+                    username
+                }
+            }
+        },
+        answerComment {
+            id,
+            user {
+                id,
+                username
+                }
+            content,
+            answer {
+                id,
+                question {
+                    id,
+                    user {
+                        id,
+                        username
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+  "logo": "img/logo.png",
+  "layertree": {
+    "active": true,
+    "show": false
+  },
+  "tools": [
+    {
+      "id": "maptools",
+      "icon": "mdi-map",
+      "title": "Map tools",
+      "type": "group",
+      "active": true,
+      "items": [
+        {
+          "id": "epsg",
+          "title": "Change EPSG",
+          "icon": "mdi-map",
+          "cmp": "ChangeEPSG",
+          "active": true,
+          "renderAs": "dialog"
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "icon": "mdi-map-marker-plus",
+      "title": "Add Data",
+      "type": "group",
+      "active": true,
+      "items": [
+        {
+          "id": "wms",
+          "title": "Add WMS",
+          "icon": "mdi-map",
+          "cmp": "add-wms",
+          "active": true,
+          "renderAs": "dialog"
+        },
+        {
+          "id": "wfs",
+          "title": "Add WFS",
+          "icon": "mdi-map",
+          "cmp": "add-wfs",
+          "active": true,
+          "renderAs": "drawer"
+        }
+      ]
+    },
+    {
+      "id": "ogrfilter",
+      "icon": "mdi-filter",
+      "title": "OGR filter",
+      "active": true,
+      "renderAs": "drawer",
+      "cmp": "ogr-filter"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+mutation(
+    $question_id: ID!
+    $comment: String!
+) {
+    rejectExpertInquiry(
+        question_id: $question_id,
+        comment: $comment
+    ) {
+        question {
+            datastream {
+                id
+                name
+                description
+                category
+                resultTime
+                images
+            }
+        }
+        observations {
+            result
+        }
+    }
+}

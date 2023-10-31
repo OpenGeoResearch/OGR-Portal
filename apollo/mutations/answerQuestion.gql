@@ -1,0 +1,41 @@
+mutation($id: ID!, $content: String!, $wms: [WebMapServiceInput]) {
+    answerQuestion(
+        id: $id,
+        content: $content,
+        wms: $wms
+    ) {
+        answers {
+            id
+            content
+            created
+            user {
+                username
+                roles {
+                    name
+                }
+            }
+            votes {
+                upCount
+                downCount
+            }
+            comments {
+                id
+                content
+                created
+                user {
+                    username
+                }
+            }
+            wms {
+                id
+                title
+                url
+                layers
+                description
+                opacity
+                visible
+                legend
+            }
+        }
+    }
+}

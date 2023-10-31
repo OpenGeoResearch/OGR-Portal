@@ -1,0 +1,57 @@
+mutation ($id: ID!) {
+    deleteReportedAnswer(id: $id) {
+        id,
+        text,
+        reason {
+          name
+        },
+        created,
+        user {
+          id,
+          username
+        }
+        question {
+          id,
+          user {
+              id,
+              username
+          }
+        },
+        answer {
+          id,
+          user {
+              id,
+              username
+          },
+          content,
+          question {
+              id
+          }
+        },
+        questionComment {
+          id,
+          user {
+              id,
+              username
+          },
+          content,
+          question {
+              id
+          }
+        },
+        answerComment {
+          id,
+          user {
+              id,
+              username
+          },
+          content,
+          answer {
+              id,
+              question {
+                  id
+              }
+          }
+        }
+    }
+}

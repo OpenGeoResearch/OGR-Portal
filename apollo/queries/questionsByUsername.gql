@@ -1,0 +1,25 @@
+query Question($username: String!) {
+    questionsByUsername(username: $username) {
+        id
+        votes {
+            upCount
+            downCount
+        }
+        datastream {
+            name
+            description
+            resultTime
+            images
+            category
+            observedArea
+        }
+        answers {
+            id
+            user {
+                roles {
+                    name
+                }
+            }
+        }
+    }
+}

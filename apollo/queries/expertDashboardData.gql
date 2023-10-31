@@ -1,0 +1,14 @@
+query ExpertDashboardData {
+    expertDashboardData {
+        expertInquiryData {
+            inquired,
+            answered,
+            rejected,
+            open
+        }
+        expertAnswerData {
+            answers,
+            votes
+        }
+    }
+}

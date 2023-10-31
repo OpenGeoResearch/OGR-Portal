@@ -1,0 +1,36 @@
+query User($username: String!) {
+  user(username: $username) {
+    id
+    username
+    roles {
+      name
+    }
+    userData {
+      affiliationName
+      affiliationUrl
+      name
+      field1
+      field2
+      field3
+      description
+      bannerUrl
+      avatarUrl
+      expertRegion {
+        id
+        name
+      }
+    },
+    answers {
+      votes {
+        upCount,
+        downCount
+      }
+    },
+    questions {
+      votes {
+        upCount,
+        downCount
+      }
+    }
+  }
+}

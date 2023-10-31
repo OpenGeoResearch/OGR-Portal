@@ -1,0 +1,6 @@
+query ExpertRegion {
+  getRegions {
+    id
+    name
+  }
+}

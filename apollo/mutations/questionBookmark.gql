@@ -1,0 +1,9 @@
+mutation(
+    $id: ID!
+    $bookmark: Boolean
+) {
+    questionBookmark(
+        id: $id,
+        bookmark: $bookmark
+    )
+}

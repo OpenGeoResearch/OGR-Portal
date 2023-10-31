@@ -1,0 +1,23 @@
+mutation ($includedTags: [String]!, $excludedTags: [String]!, $categoryCode: String, $dates: [String], $semanticTags: [String], $id: ID, $newTags: [String]) {
+  setFunctionalTagsAndGetQuestionsByEditorFilter(includedTags: $includedTags, excludedTags: $excludedTags, categoryCode: $categoryCode, dates: $dates, semanticTags: $semanticTags, id: $id, newTags: $newTags) {
+       question {
+        datastream {
+            id
+            name
+            description
+            category
+            resultTime
+            images
+        }
+       }
+       observations {
+           result
+       }
+       expertInquiry {
+            created
+            user {
+                username
+            }
+       }
+  }
+}

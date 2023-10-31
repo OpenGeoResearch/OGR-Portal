@@ -1,0 +1,33 @@
+query QuestionSeries($id: ID!) {
+    questionSeriesByUserId(id: $id) {
+        id
+        name
+        start
+        end
+        tag
+        exam
+        parentQuestion {
+            id
+            votes {
+                upCount
+                downCount
+            }
+            datastream {
+                name
+                description
+                resultTime
+                images
+                category
+                observedArea
+            }
+            answers {
+                id
+                user {
+                    roles {
+                        name
+                    }
+                }
+            }
+        }
+    }
+}

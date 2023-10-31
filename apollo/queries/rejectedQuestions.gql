@@ -1,0 +1,17 @@
+query QuestionData {
+   rejectedQuestions {
+        question {
+            datastream {
+                id
+                name
+                description
+                category
+                resultTime
+                images
+            }
+        }
+        observations {
+            result
+        }
+    }
+}

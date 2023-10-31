@@ -1,0 +1,14 @@
+query DashboardData {
+    dashboardData {
+        activeReports
+        indefiniteImages
+        indefiniteAudios
+        indefiniteVideos
+        flaggedImages
+        flaggedAudios
+        flaggedVideos
+        allQuestions
+        newQuestions
+        feedback
+    }
+}
