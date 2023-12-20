@@ -17,7 +17,8 @@ More Information regarding the project can be found here: [OpenGeoResearch Homep
 ## Authors
 
 Thomas Lemmerz <br />
-Stefan Herlé
+Stefan Herlé  <br />
+Marcel Aubart
 
 opengeoresearch@rwth-aachen.de
 
